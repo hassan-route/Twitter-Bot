@@ -12,11 +12,16 @@ import routetwitterparse as rtwitterparse
 import os
 import time
 import datetime
+import environ as en
 
-consumer_key = '6n8WP546sOXc5BSyUBQIAoeGI'
-consumer_secret = '1d04V7XCPZ3omQsozvqogqO5N178mSP71sINSB8yFyRASKxMog'
-access_token = '937096171180515329-1EBWoA4yBpzigeNgEP8ecJ0fKSuEXcm'
-access_token_secret = '1lrniV3o3zzARj20QHZPouXYAUi6ZPlduBLud2BR010d0'
+trwittercreds = en.environ.getTwitterCreds()
+
+consumer_key = trwittercreds['consumer_key']
+consumer_secret = trwittercreds['consumer_secret']
+access_token = trwittercreds['access_token']
+access_token_secret = trwittercreds['access_token_secret']
+
+
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)

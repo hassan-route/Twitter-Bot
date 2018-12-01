@@ -27,7 +27,7 @@ class RouteTwitterAnalytics():
     pos_adj = ['good']
     negative_keywords = ['Soccer', 'hockey', 'baseball', 'volleyball', 'co.uk', 'wife', 'husband', 'father', 'dad', 'Horseracing', 'Nigeria', 'erotic', 'fiction', 
                          'argue', 'Manchester', 'Liverpool', 'ebay', 'hate', 'MAGA', 'nationalist', 'redhats', 'constitutionalist', 'chanelsea_', 'slingstagram92']
-    blacklist = ['MakenaMD', 'CFL_PAK', 'juscarts']
+    blacklist = ['MakenaMD', 'CFL_PAK', 'juscarts', 'LukePollard', 'bigtaltal', 'Ryanlugo1']
     
     def __init__(self):
         print("init RouteTwitterAnalytics")
